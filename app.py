@@ -20,8 +20,10 @@ from sumy.summarizers.lsa import LsaSummarizer
 import speech_recognition as sr
 import glob
 from pydub import AudioSegment
+import nltk
 
 r = sr.Recognizer()
+nltk.download('punkt')
 summarizer_lsa = LsaSummarizer()
 headers = {'user-agent': 'Wget/1.16 (linux-gnu)'}
 
