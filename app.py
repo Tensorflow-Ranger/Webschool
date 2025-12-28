@@ -28,7 +28,7 @@ summarizer_lsa = LsaSummarizer()
 headers = {'user-agent': 'Wget/1.16 (linux-gnu)'}
 
 firebaseConfig = {
-    "apiKey": "AIzaSyDw65BvUcaILJoXX8Mws5QOTRLjyXCGlf0",
+    "apiKey": "<your_api_key>",
     "authDomain": "webschool-7e9db.firebaseapp.com",
     "projectId": "webschool-7e9db",
     "storageBucket": "webschool-7e9db.appspot.com",
@@ -164,3 +164,4 @@ if __name__ == '__main__':
   port = int(os.environ.get("PORT", 5000))
   print(f"Running on: 0.0.0.0:{port}")
   app.run(host='0.0.0.0', port=port, threaded=True)
+
